@@ -1,0 +1,198 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <!--link(rel ='stylesheet' href='css/normalize.css')-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
+  <title>Мишка</title>
+</head>
+
+<body>
+  <header>
+    <section class="page-header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a class="logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg" />
+              <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg" />
+              <img src="img/icons/logo-mobile.svg" alt="Логотип" />
+            </picture>
+          </a>
+        </div><span class="toogler" type="button"></span><span class="closer"></span>
+        <nav class="header__nav header__nav--closed">
+          <ul>
+            <li class="nav__item nav__item--catalog"><a class="nav__link nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav__item nav__item--order"><a class="nav__link nav__link--order">Вязание на заказ</a>
+            </li>
+            <li class="nav__item nav__item--search">
+              <a class="nav__link nav__link--search">
+                <svg class="nav-icon" width="22" height="21">
+                  <use xlink:href="img/icons/symbols.svg#icon-search"></use>
+                  <p>Поиск по сайту</p>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item nav__item--cart">
+              <a class="nav__link nav__link--cart">
+                <svg class="nav-icon" width="22" height="21">
+                  <use xlink:href="img/icons/symbols.svg#icon-cart"></use>
+                </svg>
+                <p>Корзина</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__delivery">
+          <p>Бесплатная доставка по России</p>
+        </div>
+        <p class="inputs">Новые поступления</p>
+        <p class="sale">Распродажа</p>
+      </div>
+    </section>
+    <section class="form-intro">
+      <div class="form-intro__header intro__headear">
+        <h1 class="intro__header form__header">Вязание на заказ</h1>
+      </div>
+      <p class="form-intro__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    </section>
+  </header>
+  <main>
+    <section class="form-block">
+      <form class="form">
+        <legend class="type">Тип</legend>
+        <div class="form-block radio-group">
+          <div class="radio-block">
+            <input class="radio" type="radio" id="accessory" name="accessory" />
+            <label for="accessory"></label>
+            <p>Аксессуар для интерьера</p>
+          </div>
+          <div class="radio-block">
+            <input class="radio" type="radio" id="toy" name="toy" value="toy" />
+            <label for="toy"></label>
+            <p>Детская игрушка</p>
+          </div>
+        </div>
+        <legend class="color">Цвет</legend>
+        <div class="form-block checkbox-group">
+          <div class="checkbox-block">
+            <input class="checkbox" type="checkbox" id="white" name="white" value="white" />
+            <label for="white"></label>
+            <p>Белый</p>
+          </div>
+          <div class="checkbox-block">
+            <input class="checkbox" type="checkbox" id="gray" name="gray" value="gray" />
+            <label for="gray"></label>
+            <p>Серый</p>
+          </div>
+          <div class="checkbox-block">
+            <input class="checkbox" type="checkbox" id="tiffany" name="tiffany" value="tiffany" />
+            <label for="tiffany"></label>
+            <p>"Тиффани"</p>
+          </div>
+          <div class="checkbox-block">
+            <input class="checkbox" type="checkbox" id="black" value="black" name="black" />
+            <label for="black"></label>
+            <p>Черный</p>
+          </div>
+          <div class="checkbox-block">
+            <input class="checkbox" type="checkbox" id="pink" name="pink" value="pink" />
+            <label for="pink"></label>
+            <p>Розовый</p>
+          </div>
+          <div class="checkbox-block">
+            <input class="checkbox" type="checkbox" id="orange" name="orange" value="orange" />
+            <label for="orange"></label>
+            <p>Оранжевый</p>
+          </div>
+        </div>
+        <legend class="person">ФИО</legend>
+        <div class="form-block person-group">
+          <div class="person-group__block">
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Введите ваше имя" />
+          </div>
+          <div class="person-group__block">
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" placeholder="Укажите фамилию" />
+          </div>
+          <div class="person-group__block">
+            <label for="acronym">Отчество</label>
+            <input type="text" id="acronym" placeholder="Отчество, если пожелаете" />
+          </div>
+        </div>
+        <legend class="legend__tel">ТЕЛ</legend>
+        <div class="form-block contacts-group">
+          <div class="contacts-group__block">
+            <div class="contacts__tel">
+              <input class="tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" />
+              <label for="tel">
+                <svg class="developers__img" width="25" height="24">
+                  <use xlink:href="img/icons/symbols.svg#icon-phone"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+        <legend class="legend__email">e-mail</legend>
+        <div class="form-block contacts-group contacts-group--email">
+          <div class="contacts-group__block">
+            <div class="contacts__email">
+              <input class="email" type="email" id="email" name="email" placeholder="Ваш Email*" />
+              <label for="email">
+                <svg class="developers__img" width="32" height="30">
+                  <use xlink:href="img/icons/symbols.svg#icon-mail"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+        <legend class="legend__additional">ДОП</legend>
+        <div class="contacts__message">
+          <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </form>
+      <p class="form__attention">*Поля обязательны для заполнения</p><a class="btn btn__confirm" href="#">Отправить заказ</a>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <svg class="footer__img" width="102" height="34">
+        <use xlink:href="img/icons/symbols.svg#logo-mobile"></use>
+      </svg>
+      <section class="socio">
+        <div class="socio__icon">
+          <svg class="icon-insta" width="22" height="21">
+            <use xlink:href="img/icons/symbols.svg#icon-insta"></use>
+          </svg>
+        </div>
+        <div class="socio__icon">
+          <svg class="icon-fb" width="15" height="29">
+            <use xlink:href="img/icons/symbols.svg#icon-fb"></use>
+          </svg>
+        </div>
+        <div class="socio__icon">
+          <svg class="icon-twitter" width="24" height="20">
+            <use xlink:href="img/icons/symbols.svg#icon-twitter"></use>
+          </svg>
+        </div>
+      </section>
+      <div class="developers">
+        <p class="developers__text">Разработано</p>
+        <a href="http://htmlacademy.ru">
+          <svg class="developers__img" width="27" height="34">
+            <use xlink:href="img/icons/symbols.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
