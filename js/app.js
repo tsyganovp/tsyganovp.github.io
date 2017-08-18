@@ -74,6 +74,22 @@ $(window).scroll(function()
             $("#zoomindown").eq(0).addClass("animated zoomInDown")
         },500)
     }
+    if (($(this).scrollTop()+h) >= $("#zoomindown2").offset().top)
+    {
+        setTimeout(function()
+        {
+            $("#zoomindown2").css({visibility:"visible"});
+            $("#zoomindown2").eq(0).addClass("animated zoomInDown")
+        },500)
+    }
+    if (($(this).scrollTop()+h) >= $("#zoomindown3").offset().top)
+    {
+        setTimeout(function()
+        {
+            $("#zoomindown3").css({visibility:"visible"});
+            $("#zoomindown3").eq(0).addClass("animated zoomInDown")
+        },500)
+    }
 });
 
 //Скролл до нужного якоря (меню)

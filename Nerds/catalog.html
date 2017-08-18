@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='css/normalize.css' rel='stylesheet'>
+		<link href='css/style.css' rel='stylesheet'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<title>Nerds</title>
+	</head>
+ <body>
+		<div class='container menu clearfix'>
+			<div class='header clearfix'>
+				<div class='logo'>
+					<img src='img/logo.png' width='139' height='56' alt='Логотип'>
+				</div>
+				<div class='main-menu'>
+					<ul class='main-menu-ul'>
+					<li>Студия</li>
+					<li>Клиенты</li>
+					<li><span class='opened'>Магазин</span></li>
+					<li>Контакты</li>
+					<li><i class='icon-basket'></i>Корзина</li>
+					</ul>
+				</div>
+			</div>
+ 			<div class='catalog-header-text'>
+ 				<p>Добро пожаловать в магазин<br> готовых макетов</p>
+ 			</div>
+ 		</div>
+ 		<div class='container form clearfix'>	
+ 			<div class='left-column-catalog'>
+				<form action='/echo' method='get' name='filter' oninput=''>
+					<fieldset class='price'>
+						<legend class='price-legend'>Стоимость:</legend>
+						<div class='range-selector'>
+						<input class='range' type='range' min='0' max='15000' step='500' id='range'></div>
+						<div class='sum-selector'>
+							<span>ОТ</span> <output class='sum' name='sum'>0</output>
+							<span>ДО</span> <output class= 'sum-output' name='sum-output'>15000</output>
+						</div>
+				
+					</fieldset>
+					<fieldset class='grid'>
+						<legend class='grid-legend'>Сетка:</legend>
+						<input class='checkbox' type='checkbox' name='adaptive' id='adaptive' checked><label for='adaptive'>Адаптивная</label><br>
+						<input class='checkbox' type='checkbox' name='fixed' id='fixed'><label for='fixed'>Фиксированная</label><br>
+						<input class='checkbox' type='checkbox' name='liquid' id='liquid' checked><label for='liquid'>Резиновая</label><br>
+					</fieldset>	
+			
+					<fieldset class='features'>
+						<legend class='features-legend'>Особенности</legend>
+						<input class='checkbox' type='radio' id='slider-unit' checked><label for='slider-unit'>Слайдер</label><br>
+						<input class='checkbox' type='radio' id='features-unit'><label for='features-unit'>Блок преимуществ</label><br>
+						<input class='checkbox' type='radio' id='news-unit'><label for='news-unit'>Новости</label><br>
+						<input class='checkbox' type='radio' id='gallery-unit'><label for='gallery-unit'>Галерея</label><br>
+						<input class='checkbox' type='radio' id='box-unit'><label for='box-unit'>Корзина</label><br>
+						
+					</fieldset>
+					<input class=' form-btn show-btn' type='submit' value='ПОКАЗАТЬ'>
+				</form>
+			</div>
+
+
+		<!--right-column-->
+			<div class='right-column-catalog'>
+				<div class='sorting'>
+					<p class='sortings'>СОРТИРОВАТЬ:
+					<a class='by-price' href='#'>По цене</a>
+					<a class='by-type' href='#'>По типу</a>
+					<a class='by-function' href='#'>По функционалу</a>
+					<a class='btn-up' href='#'><i class='icon-up-dir'></i></a>
+					<a class='btn-down' href='#'><i class='icon-down-dir'></i></a>
+				</p>
+				<article class='work'>
+					<div class='work-header'>
+						<div class='circle'></div>
+						<div class='circle'></div>
+						<div class='circle'></div>
+					</div>
+					<div class='work-img'>
+						<img class='work-pic' src='img/work1.png' width='240' height='240' alt='Пример работы'>
+					</div>
+					<div class='hover-div'>
+						<h2>Sunset</h2>
+						<p>Интернет-магазин<br> с личным кабинетом</p>
+						<a class='hover-div-btn' href='#'>10 000.</a>
+					</div>
+				</article>
+				<article class='work'>
+					<div class='work-header'>
+						<div class='circle'></div>
+						<div class='circle'></div>
+						<div class='circle'></div>
+					</div>
+					<div class='work-img'>
+						<img class='work-pic' src='img/work2.png' width='240' height='240' alt='Пример работы'>
+					</div>
+					<div class='hover-div'>
+						<h2>Sunset</h2>
+						<p>Интернет-магазин<br> с личным кабинетом</p>
+						<a class='hover-div-btn' href='#'>10 000.</a>
+					</div>
+				</article>
+				<article class='work'>
+					<div class='work-header'>
+						<div class='circle'></div>
+						<div class='circle'></div>
+						<div class='circle'></div>
+					</div>
+					<div class='work-img'>
+						<img class='work-pic' src='img/work3.png' width='240' height='240' alt='Пример работы'>
+					</div>
+					<div class='hover-div'>
+						<h2>Sunset</h2>
+						<p>Интернет-магазин<br> с личным кабинетом</p>
+						<a class='hover-div-btn' href='#'>10 000.</a>
+					</div>
+				</article>
+				<article class='work'>
+					<div class='work-header'>
+						<div class='circle'></div>
+						<div class='circle'></div>
+						<div class='circle'></div>
+					</div>
+					<div class='work-img'>
+						<img class='work-pic' src='img/work4.png' width='240' height='240' alt='Пример работы'>
+					</div>
+					<div class='hover-div'>
+						<h2>Sunset</h2>
+						<p>Интернет-магазин<br> с личным кабинетом</p>
+						<a class='hover-div-btn' href='#'>10 000.</a>
+					</div>
+				</article>
+				<article class='work'>
+					<div class='work-header'>
+						<div class='circle'></div>
+						<div class='circle'></div>
+						<div class='circle'></div>
+					</div>
+					<div class='work-img'>
+						<img class='work-pic' src='img/work5.png' width='240' height='240' alt='Пример работы'>
+					</div>
+					<div class='hover-div'>
+						<h2>Sunset</h2>
+						<p>Интернет-магазин<br> с личным кабинетом</p>
+						<a class='hover-div-btn' href='#'>10 000.</a>
+					</div>
+				</article>
+				<article class='work'>
+					<div class='work-header'>
+						<div class='circle'></div>
+						<div class='circle'></div>
+						<div class='circle'></div>
+					</div>
+					<div class='work-img'>
+						<img class='work-pic' src='img/work6.png' width='240' height='240' alt='Пример работы'>
+					</div>
+					<div class='hover-div'>
+						<h2>Sunset</h2>
+						<p>Интернет-магазин<br> с личным кабинетом</p>
+						<a class='hover-div-btn' href='#'>10 000.</a>
+					</div>
+				</article>
+				<div class='links-block'>
+						<a class='form-btn article-list-btn active' href='#'>1</a>
+						<a class='form-btn article-list-btn' href='#'>2</a>
+						<a class='form-btn article-list-btn' href='#'>3</a>
+						<a class='form-btn article-list next-btn' href='#'>СЛЕДУЮЩАЯ</a>
+					</div>
+			</div>
+		</div>
+	</div>
+		<div class='container clearfix'>
+			<div class='map'>
+				<div class='map-contacts'>
+					<p class='map-contacts-p1'>NЁRDS DESIGN STUDIO</p>
+					<p class='map-contacts-p2'>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+					<p class='map-contacts-p3'>тел. +7 (812) 275-75-75</p>
+					<a class='btn write-btn' href='#'>Напишите нам</a>
+				</div>
+				<div class='map-nerds'>
+					<img src='img/map-nerds.png' width='231' height='190' alt='Указатель'>
+				</div>
+			</div>
+		</div>
+
+		<div class='container clearfix'>
+			<div class='social'>
+				<div class='vk'>
+					<i class='icon-vk'></i>
+				</div>
+				<div class='fb'>
+					<i class='icon-facebook'></i>
+				</div>
+				<div class='inst'>
+					<i class='icon-instagramm'></i>
+				</div>
+			</div>
+			<div class='footer-text'>
+				<p class='footer-p-1'>Давайте дружить, это выгодно!</p>
+				<p class='footer-p-2'>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+
+	<div class='modal-content-map'>
+        <div class='close'></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1188.3837554722686!2d30.320376963903055!3d59.938525792811305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1436609584975" width="800" height="600" allowfullscreen></iframe>
+	</div>
+
+	 <div class='modal-write-us'>
+        <div class='close'></div>
+        <form action='/echo' method='post'>
+            <div class='content-form clearfix'>
+                <div class='name-block'>
+                    <label for='name'>Ваше имя:</label>
+                    <input id='name' type='text' class='name' name='name' placeholder='Представьтесь, пожалуйста' required></div>
+                <div class='e-mail-block'>
+                    <label for='mail'>Ваш e-mail:</label>
+                    <input id='mail' type='email' class='email' name='mail' placeholder='Для отправки ответа' required></div>
+                <div class='text-block'>
+                    <label for='message'>Текст письма:</label>
+                    <textarea id='message' class='text' name='message' rows='6' placeholder='В свободной форме' required>
+                    </textarea >
+                </div>
+            </div>
+            <div class='form-buttons'>
+                <button type='submit' class='send-btn'>Отправить</button>
+                <a class='esc-btn' href='#'>Отмена</a>
+            </div>
+        </form>
+    </div>
+	<script src='js/slider.js'></script>
+	<script src='js/map.js'></script>
+	<script src='js/callback-form.js'></script>
+</body>
+</html>
