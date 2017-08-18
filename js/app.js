@@ -66,6 +66,14 @@ $(window).scroll(function()
             $("#zoominright").eq(0).addClass("animated zoomInRight")
         },500)
     }
+    if (($(this).scrollTop()+h) >= $("#zoomindown").offset().top)
+    {
+        setTimeout(function()
+        {
+            $("#zoomindown").css({visibility:"visible"});
+            $("#zoomindown").eq(0).addClass("animated zoomInDown")
+        },500)
+    }
 });
 
 //Скролл до нужного якоря (меню)
