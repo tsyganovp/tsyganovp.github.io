@@ -1,0 +1,203 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <!--link(rel ='stylesheet' href='css/normalize.css')-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <title>Barbershop</title>
+</head>
+
+<body>
+  <header>
+    <section class="page-header">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png" />
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.png" />
+          <img src="img/logotype-mobile.png" alt="Logo" />
+        </picture>
+      </div>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"> <a class="main-menu__link">Главная</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">Наши работы</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">Записаться</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">Контакты</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">HTML Academy</a>
+          </li>
+        </ul>
+        <!--.main-menu__loginimg(src="img/login.png" alt="Login")
+          -->
+      </nav><span class="toogler"></span>
+    </section>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo__intro">
+        <h1 class="promo__header">Стрижка у нас это выгодно!</h1>
+        <p class="promo__text">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+      </div>
+      <div class="features">
+        <div class="features__block">
+          <p class="features__number">1500<sup>*</sup>
+          </p>
+          <p class="features__text">рублей вложений</p>
+        </div>
+        <div class="features__block">
+          <p class="features__number">7 200</p>
+          <p class="features__text">секунд времени мастера</p>
+        </div>
+        <div class="features__block">
+          <p class="features__number">90 000</p>
+          <p class="features__text">постриженных волос</p>
+        </div>
+        <div class="features__block">
+          <p class="features__number">500 000<sup>*</sup>
+          </p>
+          <p class="features__text">лайков и комплиментов</p>
+        </div>
+      </div>
+      <div class="lie">
+        <p class="lie__text">* — приведённые данные ложь</p>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="slide slide--one">
+        <div class="slide__image">
+          <img src="img/slider-1.png" alt="Image" />
+        </div>
+        <div class="slide__information">
+          <h2 class="slide__header">Быстро</h2>
+          <p class="slide__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+        </div>
+      </div>
+      <div class="slide slide--two">
+        <div class="slide__image">
+          <img src="img/slider-2.png" alt="Image" />
+        </div>
+        <div class="slide__information">
+          <h2 class="slide__header">Быстро</h2>
+          <p class="slide__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+        </div>
+      </div>
+      <div class="slide slide--three">
+        <div class="slide__image">
+          <img src="img/slider-3.png" alt="Image" />
+        </div>
+        <div class="slide__information">
+          <h2 class="slide__header">Быстро</h2>
+          <p class="slide__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <div class="control control--one"></div>
+        <div class="control control--two"></div>
+        <div class="control control--three"></div>
+      </div>
+    </section>
+    <section class="news">
+      <h2 class="news__header">Новости и акции</h2>
+      <div class="news__block news__block--one">
+        <div class="news__date">
+          <p class="news__number">29</p>
+          <p class="news__month">сент</p>
+        </div>
+        <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+      </div>
+      <div class="news__block news__block--two">
+        <div class="news__date">
+          <p class="news__number">19</p>
+          <p class="news__month">сент</p>
+        </div>
+        <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+      </div>
+      <div class="news__block news__block--three">
+        <div class="news__date">
+          <p class="news__number">15</p>
+          <p class="news__month">сент</p>
+        </div>
+        <p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+      </div>
+      <div class="btn news__btn">показать все</div>
+    </section>
+    <section class="feedback">
+      <div class="feedback-slider">
+        <h2 class="feedback__header">Отзывы о нас</h2>
+        <div class="btn feedback__btn">Оставить свой</div>
+        <div class="feedback-slide">
+          <div class="slide-left">
+            <img src="img/left-arrow.png" alt="Arrow" />
+          </div>
+          <div class="feedback-slide__body">
+            <div class="feedback-slide__author">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/feedback-photo-desktop.png" />
+                <source media="(min-width: 768px)" srcset="img/feedback-photo-tablet.png" />
+                <img src="img/feedback-photo.jpg" alt="Photo" />
+              </picture>
+            </div>
+            <div class="feedback-slide__about">
+              <h2 class="feedback-slide__header">Трэвис Баркер</h2>
+              <p class="feedback-slide__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+            </div>
+          </div>
+          <div class="slide-right">
+            <img src="img/right-arrow.png" alt="Arrow" />
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <div class="control control--one"></div>
+        <div class="control control--two"></div>
+        <div class="control control--three"></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <section class="contacts">
+        <p class="contacts__header">Барбершоп Бородинский</p>
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <p class="contacts__tel">+7 (812) 555-66-66</p>
+      </section>
+      <section class="socio">
+        <p class="socio__text">Давайте дружить!</p>
+        <div class="socio__images">
+          <div class="socio__image socio__image--one">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/vk-icon-small-png.png" />
+              <img src="img/vk-icon-big-png.png" alt="Socio" />
+            </picture>
+          </div>
+          <div class="socio__image socio__image--two">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/facebook-icon-small-png.png" />
+              <img src="img/facebook-icon-big-png.png" alt="Socio" />
+            </picture>
+          </div>
+          <div class="socio__image socio__image--three">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/insta-icon-small-png.png" />
+              <img src="img/insta-icon-big-png.png" alt="Socio" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="developers">
+        <p class="footer__header">Разработано:</p>
+        <p class="footer__text">HTMLAcademy</p>
+      </section>
+    </section>
+  </footer>
+</body>
+
+</html>

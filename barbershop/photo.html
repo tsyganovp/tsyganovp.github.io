@@ -1,0 +1,231 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <!--link(rel ='stylesheet' href='css/normalize.css')-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <title>Barbershop</title>
+</head>
+
+<body>
+  <header>
+    <section class="page-header">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png" />
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.png" />
+          <img src="img/logotype-mobile.png" alt="Logo" />
+        </picture>
+      </div>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"> <a class="main-menu__link">Главная</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">Наши работы</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">Записаться</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">Контакты</a>
+          </li>
+          <li class="main-menu__item"> <a class="main-menu__link">HTML Academy</a>
+          </li>
+        </ul>
+        <!--.main-menu__loginimg(src="img/login.png" alt="Login")
+          -->
+      </nav><span class="toogler"></span>
+    </section>
+  </header>
+  <main>
+    <section class="works">
+      <h1 class="works__header">Наши работы</h1>
+      <div class="btn work__btn">
+        <p>На главную</p>
+      </div>
+      <div class="work-of-month">
+        <div class="works-of-month__image">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg" />
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg" />
+            <img src="img/work-om.jpg" alt="Photo" />
+          </picture>
+        </div>
+        <div class="work-of-month__text-block">
+          <p class="work-of-month__promo">Работа месяца</p>
+          <p class="work-of-month__name">Лжепётр Мчиславский</p>
+          <p class="work-of-month__text">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+          <div class="what-done">
+            <div class="what-done__block">
+              <img src="img/scissors.png" alt="image" />
+              <p>Стрижка</p>
+            </div>
+            <div class="what-done__block">
+              <img src="img/beard.png" alt="image" />
+              <p>Бритье</p>
+            </div>
+            <div class="what-done__block">
+              <img src="img/mustache.png" alt="image" />
+              <p>Усы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-blocks">
+        <div class="work">
+          <div class="work__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg" />
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg" />
+              <img src="img/work-2.jpg" alt="Photo" />
+            </picture>
+          </div>
+          <div class="work__text-block">
+            <p class="work__name">Саша Мальцев</p>
+            <p class="work__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+            <div class="what-done">
+              <div class="what-done__block">
+                <img src="img/scissors.png" alt="image" />
+                <p>Стрижка</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg" />
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg" />
+              <img src="img/work-3.jpg" alt="Photo" />
+            </picture>
+          </div>
+          <div class="work__text-block">
+            <p class="work__name">Владимир Иваныч</p>
+            <p class="work__text work__text--two">К зимнему сезону — готов!</p>
+            <div class="what-done">
+              <div class="what-done__block">
+                <img src="img/beard.png" alt="image" />
+                <p>Борода</p>
+              </div>
+              <div class="what-done__block">
+                <img src="img/mustache.png" alt="image" />
+                <p>Усы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg" />
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg" />
+              <img src="img/work-4.jpg" alt="Photo" />
+            </picture>
+          </div>
+          <div class="work__text-block">
+            <p class="work__name">Винстон Синий</p>
+            <p class="work__text">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+            <div class="what-done">
+              <div class="what-done__block">
+                <img src="img/scissors.png" alt="image" />
+                <p>Стрижка</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <h2 class="prices__header">ПРЕЙСКУРАНТ</h2>
+      <div class="prices-table">
+        <div class="prices-table__row">
+          <p class="number">1</p>
+          <p class="todo">Классическая стрижка</p>
+          <p class="desc"><span>(</span>с мытьём головы<span>)</span>
+          </p>
+          <p class="price">1 500 руб.</p>
+        </div>
+        <div class="prices-table__row">
+          <p class="number">2</p>
+          <p class="todo">Современный вариант</p>
+          <p class="desc"><span>(</span>с мытьём головы<span>)</span>
+          </p>
+          <p class="price">1 500 руб.</p>
+        </div>
+        <div class="prices-table__row">
+          <p class="number">3</p>
+          <p class="todo">Индивидуальный подход</p>
+          <p class="desc"><span>(</span>с мытьём головы<span>)</span>
+          </p>
+          <p class="price">2 000 руб.</p>
+        </div>
+        <div class="prices-table__row">
+          <p class="number">4</p>
+          <p class="todo">Бритьё головы</p>
+          <p class="desc desc--four"><span>(</span>без мытья<span>)</span>
+          </p>
+          <p class="price">500 руб.</p>
+        </div>
+        <div class="prices-table__row">
+          <p class="number">5</p>
+          <p class="todo">Бритьё головы</p>
+          <p class="desc"><span>(</span>с мытьём головы<span>)</span>
+          </p>
+          <p class="price">1 000 руб.</p>
+        </div>
+      </div>
+      <div class="discount">
+        <div class="discount__img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/clock-illustration-desktop.png" />
+            <img src="img/clock-illustration.png" alt="Clock" />
+          </picture>
+        </div>
+        <div class="discount__text">
+          <p>C 10:00 до 14:00 скидка 20%</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <section class="contacts">
+        <p class="contacts__header">Барбершоп Бородинский</p>
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <p class="contacts__tel">+7 (812) 555-66-66</p>
+      </section>
+      <section class="socio">
+        <p class="socio__text">Давайте дружить!</p>
+        <div class="socio__images">
+          <div class="socio__image socio__image--one">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/vk-icon-small-png.png" />
+              <img src="img/vk-icon-big-png.png" alt="Socio" />
+            </picture>
+          </div>
+          <div class="socio__image socio__image--two">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/facebook-icon-small-png.png" />
+              <img src="img/facebook-icon-big-png.png" alt="Socio" />
+            </picture>
+          </div>
+          <div class="socio__image socio__image--three">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/insta-icon-small-png.png" />
+              <img src="img/insta-icon-big-png.png" alt="Socio" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="developers">
+        <p class="footer__header">Разработано:</p>
+        <p class="footer__text">HTMLAcademy</p>
+      </section>
+    </section>
+  </footer>
+</body>
+
+</html>
